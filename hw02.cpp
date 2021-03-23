@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 
 int main()
 {
@@ -14,14 +14,11 @@ int main()
     printf("What is your name?\n");
     scanf("%s", buffer);
 
-    int index = 0;
-    index--;
-    printf("%s\n", &buffer[index]);
+    buffer--;
+    printf("%s\n", buffer);
 
     char newName[] = "anonym";
-    for (; index < 10; index++) {
-        buffer[index] = newName[index];
-    }
+    strcpy(buffer, newName);
 
     for (int i = 0; i < 10; i++) {
         buffer[i] = 'a';
