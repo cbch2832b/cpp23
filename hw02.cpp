@@ -39,10 +39,7 @@ int main()
     printf("%s\n", buffer);
 
     buffer = (char*)malloc(buffsize);
-
-    int a;
-    printf("%s",  &a);
-
+    
     for (unsigned int i = 9; i >= 0; i--) { return 0; }
 
     return 0;
